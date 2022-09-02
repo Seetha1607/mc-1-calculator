@@ -26,7 +26,7 @@ public class ScientificCalculator {
 		//or else call ceil method of Math class and return the value
 		return 1;
 	}
-	
+
 	public double floorOfANumber(float num) throws CalculatorException {
 		//check if num is equal to or less than 0 than throw the userdefined exception with proper message
 		if (num <= 0) {
@@ -50,12 +50,11 @@ public class ScientificCalculator {
 		return -1;
 	}
 
-    public double squareRoot(int num) throws CalculatorException {
+	public double squareRoot(int num) throws CalculatorException {
 		//check if num is equal to or less than 0 than throw the userdefined exception with proper message
 		if (num <= 0) {
 			throw new CalculatorException("Base and exponent cannot be zero");
-		} else
-			Math.sqrt(num);
+		} else Math.sqrt(num);
 		//or else call sqrt method of Math class and return the value
 		return -1;
 	}
